@@ -28,7 +28,7 @@ class TouchBarController: NSWindowController, NSTouchBarDelegate, CAAnimationDel
         handleMusic()
     }
     
-    @available(OSX 10.12.1, *)
+    @available(OSX 10.12.2, *)
     override func makeTouchBar() -> NSTouchBar? {
         let touchBar = NSTouchBar()
         touchBar.delegate = self
@@ -40,7 +40,7 @@ class TouchBarController: NSWindowController, NSTouchBarDelegate, CAAnimationDel
         
     }
     
-    @available(OSX 10.12.1, *)
+    @available(OSX 10.12.2, *)
     func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchBarItemIdentifier) -> NSTouchBarItem? {
         
         let wholeTouchBar = NSCustomTouchBarItem(identifier: identifier)
